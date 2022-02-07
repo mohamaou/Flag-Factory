@@ -30,8 +30,12 @@ public class Flag : MonoBehaviour
         targetEntryPoints = entryPoint;
         position = transform.position;
     }
+
+    public bool move;
     private void Update()
     {
+        PaintManager.instance.Rotate(paintable,tes);
+        if (move) return;
         GetTexture();
         Movement();
     }
@@ -86,8 +90,10 @@ public class Flag : MonoBehaviour
         return paintable.GetPaintMaterial().GetTexture("_MainTex");
     }
 
+
+    public float tes = Mathf.PI;
     public void RotateUv()
     {
-        
+        PaintManager.instance.Rotate(paintable,Mathf.PI / 2);
     }
 }

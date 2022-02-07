@@ -3,6 +3,7 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _Angle ("Angle", Range(-5.0,  5.0)) = 0
     }
 
     SubShader
@@ -25,6 +26,7 @@
             float4 _Color3;
 
             float _Alpha;
+            float _Angle;
 
             struct appdata
             {
@@ -38,36 +40,39 @@
                 float2 uv : TEXCOORD0;
                 float4 worldPos : TEXCOORD1;
             };
-            
 
+            
             v2f vert (appdata v)
             {
                 v2f o;
 				o.worldPos = mul(unity_ObjectToWorld, v.vertex);
-                o.uv = v.uv;
+                float cosAngle = cos(_Angle);
+                float sinAngle = sin(_Angle);
+                float2x2 rot = float2x2(cosAngle, -sinAngle, sinAngle, cosAngle);
 				float4 uv = float4(0, 0, 0, 1);
                 uv.xy = float2(1, _ProjectionParams.x) * (v.uv.xy * float2( 2, 2) - float2(1, 1));
+                o.uv = mul(rot, uv);
 				o.vertex = uv; 
                 return o;
             }
-
+            
             float4 SetColor(float x)
             {
                 if(_Color2.a != 1 && _Color3.a != 1) return _Color1;
                 if(_Color1.a == 1 && _Color2.a == 1&& _Color3.a == 1)
                 {
-                    if(x < 0.33333)return _Color1;
+                    if(x < 0.33333) return _Color1;
                     if(x < 0.66666) return _Color2;
                     return _Color3;
                 }
                 if(_Color1.a != 1)
                 {
-                    if(x < 0.5)return _Color2;
+                    if(x < 0.5) return _Color2;
                     return _Color3;
                 }
                 if(_Color2.a != 1)
                 {
-                    if(x < 0.5)return _Color1;
+                    if(x < 0.5) return _Color1;
                     return _Color3;
                 }
                 if(x < 0.5) return _Color1;
@@ -88,8 +93,6 @@
                 col.a = 0;
                 return lerp(col,SetLogo(i.uv),SetLogo(i.uv).a);
             }
-       
-            
             ENDCG
         }
     }
