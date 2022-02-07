@@ -7,9 +7,11 @@ public class Flag : MonoBehaviour
     [SerializeField] [Range(0, 1)] private float height;
     [SerializeField] private Paintable paintable;
     
+    
     private Vector3 position;
     private Color myColor;
     private EntryPoint targetEntryPoints;
+    
 
 
     private void Start()
@@ -21,6 +23,7 @@ public class Flag : MonoBehaviour
     {
         SetColor(Color.white);
     }
+    
 
     public void SetTargetEntryPoint(EntryPoint entryPoint)
     {
@@ -29,6 +32,7 @@ public class Flag : MonoBehaviour
     }
     private void Update()
     {
+        GetTexture();
         Movement();
     }
     private void Movement()
@@ -67,9 +71,19 @@ public class Flag : MonoBehaviour
     {
         PaintManager.instance.MergeColors(paintable,color1,color2,color3);
     }
+
+    public void MergeLogos(Texture texture1 ,Texture texture2, Texture texture3)
+    {
+        PaintManager.instance.MergeLogos(paintable,texture1,texture2,texture3);
+    }
     public Color GetColor()
     {
         return myColor;
+    }
+
+    public Texture GetTexture()
+    {
+        return paintable.GetPaintMaterial().GetTexture("_MainTex");
     }
 
     public void RotateUv()

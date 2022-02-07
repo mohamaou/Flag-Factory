@@ -119,19 +119,24 @@ public class Factory : MonoBehaviour
         if (flags[0] == null)
         {
             flags[index].MergeColor(flags[1].GetColor(),flags[2].GetColor(),Color.clear);
+            flags[index].MergeLogos(flags[1].GetTexture(),flags[2].GetTexture(),null);
         }
         else if(flags[1] == null)
         {
             flags[index].MergeColor(flags[0].GetColor(),flags[2].GetColor(),Color.clear);
+            flags[index].MergeLogos(flags[0].GetTexture(),flags[2].GetTexture(),null);
         }
         else if(flags[2] == null)
         {
             flags[index].MergeColor(flags[0].GetColor(),flags[1].GetColor(),Color.clear);
+            flags[index].MergeLogos(flags[0].GetTexture(),flags[1].GetTexture(),null);
         }
         else
         {
             flags[index].MergeColor(flags[0].GetColor(),flags[1].GetColor(),flags[2].GetColor());
+            flags[index].MergeLogos(flags[0].GetTexture(),flags[1].GetTexture(),flags[2].GetTexture());
         }
+        
         for (int i = 0; i < flags.Length; i++)
         {
             if (flags[i] != null && i != index)Destroy(flags[i].gameObject);

@@ -1,5 +1,5 @@
-﻿Shader "TNTC/TexturePainter"{   
-
+﻿Shader "TNTC/TexturePainter"
+{   
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
@@ -15,16 +15,16 @@
             #pragma vertex vert
             #pragma fragment frag
             sampler2D _MainTex;
-            sampler2D _Background;
 
+            sampler2D _Logo1;
+            sampler2D _Logo2;
+            sampler2D _Logo3;
+            
             float4 _Color1;
             float4 _Color2;
             float4 _Color3;
 
             float _Alpha;
-
-            sampler2D _Logo;
-            
 
             struct appdata
             {
@@ -76,8 +76,9 @@
 
             float4 SetLogo(float2 uv)
             {
-                 _Alpha = tex2D(_Logo,uv).a;
-                if(_Alpha == 1) return tex2D(_Logo,uv);
+                if(tex2D(_Logo1,uv).a == 1) return tex2D(_Logo1,uv);
+                if(tex2D(_Logo2,uv).a == 1) return tex2D(_Logo2,uv);
+                if(tex2D(_Logo3,uv).a == 1) return tex2D(_Logo3,uv);
                 return tex2D(_MainTex,uv);
             }
             
@@ -85,8 +86,10 @@
             {
                 float4 col = SetColor(i.uv.x);
                 col.a = 0;
-                return  lerp(col,SetLogo(i.uv),SetLogo(i.uv).a);
+                return lerp(col,SetLogo(i.uv),SetLogo(i.uv).a);
             }
+       
+            
             ENDCG
         }
     }

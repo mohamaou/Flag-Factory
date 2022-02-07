@@ -11,10 +11,11 @@ public class Paintable : MonoBehaviour
     RenderTexture maskRenderTexture;
     RenderTexture supportTexture;
     Renderer rend;
-    Material paintMaterial;
+    public Material paintMaterial;
     Material extendMaterial;
     public Shader texturePaint; 
     public Shader extendIslands;
+    
     
     
     public RenderTexture GetMask() => maskRenderTexture;
@@ -49,7 +50,7 @@ public class Paintable : MonoBehaviour
         rend.material.mainTexture =  extendIslandsRenderTexture;
         PaintManager.instance.initTextures(this);
     }
-
+    
     void OnDisable()
     {
         maskRenderTexture.Release();

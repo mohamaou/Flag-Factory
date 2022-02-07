@@ -11,7 +11,9 @@ public class PaintManager : Singleton<PaintManager>
     int color1ID = Shader.PropertyToID("_Color1");
     int color2ID = Shader.PropertyToID("_Color2");
     int color3ID = Shader.PropertyToID("_Color3"); 
-    int logoID = Shader.PropertyToID("_Logo");
+    int logo1ID = Shader.PropertyToID("_Logo1");
+    int logo2ID = Shader.PropertyToID("_Logo2");
+    int logo3ID = Shader.PropertyToID("_Logo3");
     #endregion
 
     public static PaintManager Instance {get; protected set;}
@@ -61,9 +63,20 @@ public class PaintManager : Singleton<PaintManager>
         Command(paintable.GetMask(),paintable.GetRenderer(),support,paintable.GetExtend(), paintable);
     }
 
-    public void MergeLogos()
+    public void MergeLogos(Paintable paintable, Texture logo1, Texture logo2, Texture logo3)
     {
-        
+        var uvIslands = paintable.GetUVIslands();
+        var support = paintable.GetSupport();
+        paintable.GetPaintMaterial().SetFloat(prepareUVID, 0);
+        paintable.GetPaintMaterial().SetTexture(textureID, support);
+        paintable.GetExtendMaterial().SetFloat(uvOffsetID, paintable.extendsIslandOffset);
+        paintable.GetExtendMaterial().SetTexture(uvIslandsID, uvIslands);
+        paintable.GetPaintMaterial().SetTexture(logo1ID,logo1);
+        paintable.GetPaintMaterial().SetTexture(logo2ID,logo2);
+        paintable.GetPaintMaterial().SetTexture(logo3ID,logo3);
+        Command(paintable.GetMask(),paintable.GetRenderer(),support,paintable.GetExtend(), paintable);
+        paintable.GetPaintMaterial().SetTexture(logo2ID,null);
+        paintable.GetPaintMaterial().SetTexture(logo3ID,null);
     }
     
     public void SetColor(Paintable paintable, Color color)
@@ -88,7 +101,7 @@ public class PaintManager : Singleton<PaintManager>
         paintable.GetPaintMaterial().SetTexture(textureID, support);
         paintable.GetExtendMaterial().SetFloat(uvOffsetID, paintable.extendsIslandOffset);
         paintable.GetExtendMaterial().SetTexture(uvIslandsID, uvIslands);
-        paintable.GetPaintMaterial().SetTexture(logoID,logo);
+        paintable.GetPaintMaterial().SetTexture(logo1ID,logo);
         
         Command(paintable.GetMask(),paintable.GetRenderer(),support,paintable.GetExtend(), paintable);
     }
