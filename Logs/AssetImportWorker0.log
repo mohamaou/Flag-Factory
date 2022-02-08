@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65248
+56251
 Successfully changed project path to: /Users/mohamed/Desktop/Flag-Factory
 /Users/mohamed/Desktop/Flag-Factory
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,7 +54,7 @@ Successfully changed project path to: /Users/mohamed/Desktop/Flag-Factory
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 80.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 83.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.8f1 (d0e5f0a7b06a)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -69,37 +69,37 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56765
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001397 seconds.
+Registered in 0.001137 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 79.96 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 83.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.400 seconds
+- Completed reload, in  0.423 seconds
 Domain Reload Profiling:
-	ReloadAssembly (400ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (423ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (293ms)
-			LoadAssemblies (60ms)
+		EndReloadAssembly (301ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (66ms)
+			SetupTypeCache (67ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (182ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (188ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (80ms)
+				RefreshPlugins (83ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadAttributes (74ms)
 				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -107,37 +107,37 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006625 seconds.
+Registered in 0.005846 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/mohamed/Desktop/Flag-Factory/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /Users/mohamed/Desktop/Flag-Factory/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 80.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 84.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.838 seconds
+- Completed reload, in  1.544 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1840ms)
-		BeginReloadAssembly (125ms)
+	ReloadAssembly (1545ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (16ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (1657ms)
-			LoadAssemblies (57ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (1429ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (162ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (1375ms)
+			SetupTypeCache (217ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (1066ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (80ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (1164ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (870ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -146,13 +146,13 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.27 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.15 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5030 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 45 unused Assets / (0.5 MB). Loaded Objects now: 5482.
-Memory consumption went from 324.2 MB to 323.6 MB.
-Total: 3.597291 ms (FindLiveObjects: 0.518833 ms CreateObjectMapping: 0.087500 ms MarkObjects: 2.732917 ms  DeleteObjects: 0.257458 ms)
+Unloading 5171 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (0.5 MB). Loaded Objects now: 5620.
+Memory consumption went from 329.9 MB to 329.4 MB.
+Total: 2.800708 ms (FindLiveObjects: 0.219958 ms CreateObjectMapping: 0.064125 ms MarkObjects: 2.324791 ms  DeleteObjects: 0.191042 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,201 +164,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 49951.181956 seconds.
-  path: Assets/Prefab/Factories/Merge Factory.prefab
-  artifactKey: Guid(b09ad70668cae41bdb5abf8f67530422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Factories/Merge Factory.prefab using Guid(b09ad70668cae41bdb5abf8f67530422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f55401a810472d0267dd845bf71cee4') in 1.223245 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Prefab/Factories/Color Factory.prefab
-  artifactKey: Guid(f0aadeba1132646e49fe476662a2bafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Factories/Color Factory.prefab using Guid(f0aadeba1132646e49fe476662a2bafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb942b77bb540da2f65f2da8258baf95') in 0.014490 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 560.838279 seconds.
-  path: Assets/Texture/Logos
-  artifactKey: Guid(fc56f891c54640b4fa14738d52c2401d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Texture/Logos using Guid(fc56f891c54640b4fa14738d52c2401d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e93582579366bd0d4d44529b0429769') in 0.013419 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.035492 seconds.
-  path: Assets/Texture/Logos/Sweden
-  artifactKey: Guid(15753694825a6eb4bb4cb2ad197ed381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Texture/Logos/Sweden using Guid(15753694825a6eb4bb4cb2ad197ed381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2fba079f7f80ae19bd6f263c7a5d0de') in 0.001194 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001718 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x2944b7000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/mohamed/Desktop/Flag-Factory/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/mohamed/Desktop/Flag-Factory/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.990 seconds
-Domain Reload Profiling:
-	ReloadAssembly (991ms)
-		BeginReloadAssembly (122ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (49ms)
-		EndReloadAssembly (816ms)
-			LoadAssemblies (170ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (168ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (318ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (43ms)
-				ProcessInitializeOnLoadAttributes (224ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4918 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (121.7 KB). Loaded Objects now: 5561.
-Memory consumption went from 330.5 MB to 330.4 MB.
-Total: 3.095750 ms (FindLiveObjects: 0.210458 ms CreateObjectMapping: 0.110833 ms MarkObjects: 2.691333 ms  DeleteObjects: 0.082292 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001266 seconds.
-Begin MonoManager ReloadAssembly
-
-=================================================================
-	Native Crash Reporting
-=================================================================
-Got a segv while executing native code. This usually indicates
-a fatal error in the mono runtime or one of the native libraries 
-used by your application.
-=================================================================
-
-=================================================================
-	Native stacktrace:
-=================================================================
-	0x1338c7a34 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : mono_dump_native_crash_info
-	0x13388a010 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : mono_handle_native_crash
-	0x1338129c8 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : mono_sigsegv_signal_handler_debug
-	0x194cf04e4 - /usr/lib/system/libsystem_platform.dylib : _sigtramp
-	0x13388be64 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : mini_resolve_imt_method
-	0x13388be64 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : mini_resolve_imt_method
-	0x13388c544 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : common_call_trampoline
-	0x13388d7b0 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : mono_vcall_trampoline
-	0x1275d17fc - Unknown
-	0x13620098c - Unknown
-	0x13621df6c - Unknown
-	0x1361fd400 - Unknown
-	0x133815c88 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : mono_jit_runtime_invoke
-	0x13399b84c - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : do_runtime_invoke
-	0x13399b76c - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/Frameworks/MonoBleedingEdge/MonoEmbedRuntime/osx/libmonobdwgc-2.0.dylib : mono_runtime_invoke
-	0x103bc8390 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _Z23scripting_method_invoke18ScriptingMethodPtr18ScriptingObjectPtrR18ScriptingArgumentsP21ScriptingExceptionPtrb
-	0x103bc3500 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _ZN19ScriptingInvocation6InvokeEP21ScriptingExceptionPtrb
-	0x103bc33c0 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _ZN19ScriptingInvocation13InvokeCheckedEP21ScriptingExceptionPtr
-	0x103c4a8e8 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _ZN22SerializableManagedRef10CallMethodER6Object18ScriptingMethodPtr
-	0x103b6bae4 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _ZN13MonoBehaviour26WillUnloadScriptableObjectEv
-	0x103b76f5c - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _ZN11MonoManager19BeginReloadAssemblyER19DomainReloadingData
-	0x103b75d10 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _ZN11MonoManager14ReloadAssemblyEv
-	0x1046acf28 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _ZL27LoadDomainAndUserAssembliesv
-	0x1046af084 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _Z18LoadUserAssembliesv
-	0x104e606d8 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _ZN23AssetImportWorkerClient16ReloadMonoDomainER13AssetResolver
-	0x104e82e40 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : ___ZZN23AssetImportWorkerClient13HandleMessageERK14PrepareMessageENK3$_8clEv_block_invoke
-	0x194b1abac - /usr/lib/system/libdispatch.dylib : _dispatch_client_callout
-	0x194b29ed8 - /usr/lib/system/libdispatch.dylib : _dispatch_async_and_wait_invoke
-	0x194b1abac - /usr/lib/system/libdispatch.dylib : _dispatch_client_callout
-	0x194b290ac - /usr/lib/system/libdispatch.dylib : _dispatch_main_queue_callback_4CF
-	0x194de5f00 - /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation : __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
-	0x194da38c0 - /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation : __CFRunLoopRun
-	0x194da2734 - /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation : CFRunLoopRunSpecific
-	0x19d93af68 - /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox : RunCurrentEventLoopInMode
-	0x19d93acdc - /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox : ReceiveNextEventCommon
-	0x19d93aa9c - /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox : _BlockUntilNextEventMatchingListInModeWithFilter
-	0x1978f9000 - /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit : _DPSNextEvent
-	0x1978f78a4 - /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit : -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
-	0x1978e99b4 - /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit : -[NSApplication run]
-	0x1978bb088 - /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit : NSApplicationMain
-	0x1057a9654 - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : _Z10EditorMainiPPKc
-	0x1057a998c - /Applications/Unity/Hub/Editor/2021.2.8f1/Unity.app/Contents/MacOS/Unity : main
-	0x108dc90f4 - Unknown
-
-=================================================================
-	Telemetry Dumper:
-=================================================================
-Pkilling 0x6430224384x from 0x4444112256x
-Pkilling 0x11012272128x from 0x4444112256x
-Pkilling 0x11389153280x from 0x4444112256x
-Pkilling 0x11418857472x from 0x4444112256x
-Pkilling 0x6432370688x from 0x4444112256x
-Pkilling 0x11014418432x from 0x4444112256x
-Pkilling 0x11391299584x from 0x4444112256x
-Pkilling 0x6423785472x from 0x4444112256x
-Pkilling 0x11421003776x from 0x4444112256x
-Pkilling 0x11016564736x from 0x4444112256x
-Pkilling 0x11436060672x from 0x4444112256x
-Pkilling 0x11393445888x from 0x4444112256x
-Pkilling 0x6425931776x from 0x4444112256x
-Pkilling 0x11007979520x from 0x4444112256x
-Pkilling 0x6128889856x from 0x4444112256x
-Pkilling 0x11423150080x from 0x4444112256x
-Pkilling 0x11018711040x from 0x4444112256x
-Pkilling 0x11414564864x from 0x4444112256x
-Pkilling 0x11395592192x from 0x4444112256x
-Pkilling 0x6428078080x from 0x4444112256x
-Pkilling 0x11010125824x from 0x4444112256x
-Pkilling 0x11020857344x from 0x4444112256x
-Pkilling 0x11387006976x from 0x4444112256x
-Pkilling 0x11416711168x from 0x4444112256x
-Entering thread summarizer pause from 0x4444112256x
-Finished thread summarizer pause from 0x4444112256x.
-Failed to create breadcrumb file (null)/crash_hash_0x44e50b20d
-debugger-agent: Unable to listen on 39
-
-Waiting for dumping threads to resume
-
-=================================================================
-	External Debugger Dump:
-=================================================================
-
-=================================================================
-	Basic Fault Address Reporting
-=================================================================
-Memory around native instruction pointer (0x13392b87c):0x13392b86c  29 05 00 f1 6b 01 00 54 0a 59 69 f8 4a 5d 40 b9  )...k..T.Yi.J]@.
-0x13392b87c  ab 5e 40 b9 5f 01 0b 6b 41 ff ff 54 28 7d 40 92  .^@._..kA..T(}@.
-0x13392b88c  69 3a 40 f9 20 79 68 78 9f 02 00 b9 4f 00 00 14  i:@. yhx....O...
-0x13392b89c  9f 02 00 b9 76 ca 40 79 a8 82 40 39 a8 02 38 36  ....v.@y..@9..86
-
-=================================================================
-	Managed Stacktrace:
-=================================================================
-	  at <unknown> <0xffffffff>
-	  at System.Collections.ObjectModel.ReadOnlyCollection`1:GetEnumerator <0x00043>
-	  at UnityEngine.Rendering.VolumeComponent:OnDisable <0x0002b>
-	  at System.Object:runtime_invoke_void__this__ <0x0006f>
-=================================================================
-Obtained 0 stack frames.

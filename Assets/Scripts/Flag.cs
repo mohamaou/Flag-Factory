@@ -94,6 +94,6 @@ public class Flag : MonoBehaviour
     public float tes = Mathf.PI;
     public void RotateUv()
     {
-        PaintManager.instance.Rotate(paintable,Mathf.PI / 2);
+       print("Rotate");
     }
 }

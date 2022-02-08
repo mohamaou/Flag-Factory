@@ -3,7 +3,6 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _Angle ("Angle", Range(-5.0,  5.0)) = 0
     }
 
     SubShader
@@ -26,7 +25,6 @@
             float4 _Color3;
 
             float _Alpha;
-            float _Angle;
 
             struct appdata
             {
@@ -46,12 +44,9 @@
             {
                 v2f o;
 				o.worldPos = mul(unity_ObjectToWorld, v.vertex);
-                float cosAngle = cos(_Angle);
-                float sinAngle = sin(_Angle);
-                float2x2 rot = float2x2(cosAngle, -sinAngle, sinAngle, cosAngle);
+                o.uv = v.uv;
 				float4 uv = float4(0, 0, 0, 1);
                 uv.xy = float2(1, _ProjectionParams.x) * (v.uv.xy * float2( 2, 2) - float2(1, 1));
-                o.uv = mul(rot, uv);
 				o.vertex = uv; 
                 return o;
             }

@@ -108,14 +108,7 @@ public class PaintManager : Singleton<PaintManager>
     
     public void Rotate(Paintable paintable, float angel)
     {
-        var uvIslands = paintable.GetUVIslands();
-        var support = paintable.GetSupport();
-        paintable.GetPaintMaterial().SetFloat(prepareUVID, 0);
-        paintable.GetPaintMaterial().SetTexture(textureID, support);
-        paintable.GetExtendMaterial().SetFloat(uvOffsetID, paintable.extendsIslandOffset);
-        paintable.GetExtendMaterial().SetTexture(uvIslandsID, uvIslands);
-        paintable.GetPaintMaterial().SetFloat("_Angle",angel);
-        Command(paintable.GetMask(),paintable.GetRenderer(),support,paintable.GetExtend(), paintable);
+       
     }
 
     private void Command(RenderTexture mask, Renderer rend, RenderTexture support, RenderTexture extend, Paintable paintable)
